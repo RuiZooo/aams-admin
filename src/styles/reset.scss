@@ -1,0 +1,70 @@
+
+/* ========== 基础重置 ========== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  background: var(--aams-bg);
+  color: var(--aams-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 清除列表 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 链接 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 图片 */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* 表单元素统一 */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+/* button 基础样式统一 */
+button {
+  cursor: pointer;
+}
+
+/* 滚动条（基础版） */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--aams-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
