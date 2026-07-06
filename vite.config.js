@@ -29,6 +29,17 @@ export default defineConfig({
     })
   ],
 
+  server: {
+      host: '192.168.1.219',
+      port: 8089,
+      proxy: {
+        '/api': {
+          target: 'http://127.0.0.1:7001',
+          changeOrigin: true,
+        }
+      }
+    },
+
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')

@@ -3,7 +3,7 @@ import request from './request'
 // 获取统计数据
 export function getDashboardStats() {
   return request({
-    url: '/dashboard/stats',
+    url: '/aams/dashboard/overview',
     method: 'GET'
   })
 }
@@ -11,7 +11,7 @@ export function getDashboardStats() {
 // 获取房态数据
 export function getRoomOverview() {
   return request({
-    url: '/dashboard/rooms',
+    url: '/aams/dashboard/rooms',
     method: 'GET'
   })
 }
@@ -19,7 +19,7 @@ export function getRoomOverview() {
 // 获取日志
 export function getRecentLogs() {
   return request({
-    url: '/dashboard/logs',
+    url: '/aams/dashboard/logs',
     method: 'GET'
   })
 }
