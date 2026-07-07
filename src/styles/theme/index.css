@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --aams-bg: #ffffff;
   --aams-bg-soft: #f5f7fa;
@@ -14,7 +15,6 @@ html.dark {
   --aams-text-secondary: #aaaaaa;
   --aams-border: #2c2c2c;
   --aams-primary: #409eff;
-
   /* 核心：将 Element Plus 的内部变量强制映射到我们的 AAMS 变量 */
   --el-bg-color: var(--aams-bg) !important;
   --el-bg-color-overlay: var(--aams-bg) !important;
@@ -24,7 +24,6 @@ html.dark {
   --el-text-color-regular: var(--aams-text) !important;
   --el-text-color-primary: var(--aams-text) !important;
   --el-color-primary: var(--aams-primary) !important;
-  
   /* 强制覆盖 Loading 蒙层颜色 */
   --el-mask-color: rgba(20, 20, 20, 0.8) !important;
 }
